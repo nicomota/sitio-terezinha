@@ -1,0 +1,172 @@
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Sitio Santa Terezinha" style="height: 80px; vertical-align: middle;">Sítio Sta Terezinha
+    </div>
+    <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+
+    <nav id="menu" [class.nav]="true" [class.show]="menuAberto">
+      <ul class="nav-links">
+        <li><a href="#solucao">Início</a></li>
+        <li><a href="#atendimento">Experiências</a></li>
+        <li><a href="#entrar">Reservar</a></li>
+        <li><a href="#conheca" class="btn-menu">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bem-vindo ao Sítio Santa Terezinha</h1>
+    <p>Conforto, elegância e o melhor pôr do sol à sua janela.</p>
+    <div class="buttons">
+      <a href="#" class="btn-outline">&#9658; Ver vídeo</a>
+      <a href="#" class="btn-primary">Reservar agora</a>
+    </div>
+  </div>
+
+  <div id="heroCarousel" class="carousel slide hero-image" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/img1.png" class="d-block mw-100" alt="Vista da piscina do hotel">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/img2.png" class="d-block mw-100" alt="Recepção do hotel">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/nicanor.png" class="d-block mw-100 " alt="Recepção do hotel">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- SEÇÃO: CONHEÇA A PRECISÃO -->
+<section class="precisao">
+  <h2>Conforto em cada detalhe</h2>
+  <p class="sub">Descanse em nossas suítes com ar-condicionado, TV Smart e camas king size.</p>
+  <img src="assets/img/piscina.jpeg" alt="Quarto de hotel" class="imagem-piscina">
+  <div class="blocos">
+    <div class="bloco">
+      <h3>Wi-Fi gratuito</h3>
+      <p>Internet rápida e estável em todos os ambientes.</p>
+    </div>
+    <div class="bloco">
+      <h3>Piscina com vista</h3>
+      <p>Relaxe com vista para para um riacho com nascente natual.</p>
+    </div>
+    <div class="bloco">
+      <h3>Em desenvolvimento</h3>
+      <p>Em desenvolvimento</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO: DEPOIMENTOS -->
+<!-- <section class="protagonismo">
+  <h2>O que dizem nossos hóspedes</h2>
+  <p class="sub">Avaliações reais de quem viveu a experiência Brisa Azul.</p>
+  <img src="assets/img/Astronauta.png" alt="Mascote Hotel" class="mascote-img masfoguete" />
+  <div class="depoimentos">
+    <div class="depoimento">
+      <p>"Uma experiência única! Atendimento impecável e vista deslumbrante."</p>
+      <span>Lucas, São Paulo</span>
+    </div>
+    <div class="depoimento">
+      <p>"Voltarei com certeza. O quarto era espaçoso e super limpo."</p>
+      <span>Ana Paula, Rio de Janeiro</span>
+    </div>
+  </div>
+</section> -->
+
+<!-- SEÇÃO: BENEFÍCIOS -->
+<section class="performance">
+  <h2>Mais que um apenas um Sítio...</h2>
+  <p class="sub">Serviços e facilidades que fazem a diferença na sua estada.</p>
+  <div class="blocos-performance">
+    <div class="bloco-perf">Estacionamento gratuito</div>
+    <div class="bloco-perf">Pet Friendly</div>
+    <div class="bloco-perf central">
+      <strong>Atendimento 24h</strong><br>Equipe sempre pronta para te ajudar.
+    </div>
+    <div class="bloco-perf">Em desenvolvimento</div>
+    <div class="bloco-perf">Em desenvolvimento</div>
+  </div>
+</section>
+
+<!-- SEÇÃO: CHAMADA TABLET -->
+<section class="chamada-parceria">
+  <div class="texto">
+    <h2>Pronto para sua próxima viagem?</h2>
+    <p>Garanta já sua reserva com em parceria com o Bar 1 Gole!!</p>
+    <a href="#" class="btn-primary">Reservar agora</a>
+  </div>
+  <div class="imagem">
+    <img src="/assets/img/1gole.png" alt="parceria">
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <h2>Dúvidas Frequentes</h2>
+  <div class="faq-item">
+    <button class="faq-question">Qual o horário de entrada?<span>+</span></button>
+    <div class="faq-answer">
+      <p>Check-in a partir das 8h até as 20h.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">O hotel aceita pets?<span>+</span></button>
+    <div class="faq-answer">
+      <p>Sim! Somos pet friendly.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Possui estacionamento gratuito?<span>+</span></button>
+    <div class="faq-answer">
+      <p>Sim, incluso na diária.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="newsletter">
+      <h3>📩 Receba novidades</h3>
+      <p>Assine nossa Newsletter e fique por dentro de ofertas e eventos.</p>
+    </div>
+
+    <div class="rodape-links">
+      <div class="coluna">
+        <h4>Sítio</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h4>Contato</h4>
+        <p>reservas.staterezinha@gmail.com<br>+55 (99) 9-XXXX XXXX</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape-inferior">
+    <p>&copy; Hotel Brisa Azul - 2025 • Todos os direitos reservados</p>
+    <p>Feito com ❤ para viajantes como você.</p>
+  </div>
+</footer>
